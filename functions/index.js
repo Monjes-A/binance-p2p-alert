@@ -68,6 +68,7 @@ const details_extract = (adv, advertiser) => {
     const d = {
         advNo: adv.advNo,
         name: advertiser.nickName,
+        userNo: advertiser.userNo,
         rating: (Number(advertiser.monthFinishRate) * 100).toFixed(2),
         price: Number(adv.price),
         min_limit_base: Number(adv.minSingleTransAmount), max_limit_base: Number(adv.maxSingleTransAmount),

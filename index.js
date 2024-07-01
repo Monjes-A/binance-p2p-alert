@@ -203,14 +203,14 @@ function start_interval() {
                                 RECENT_ALERTS.unshift(d);
                             });
                             // @Todo -> any other way to display multiple in one alert
-                            send_notification(filtered[alerts[0]].nice_text, BINANCE_P2P_BUY_URL, BINANCE_APP);
+                            send_notification(filtered[alerts[0]].nice_text, `https://p2p.binance.com/es/advertiserDetail?advertiserNo=${filtered[0].userNo}`, BINANCE_APP);
                         }
 
                         // drawing table
                         const table_columns = {
                             "Trader": { width: 20, ref: 'name' },
                             "Rating": { width: 8, ref: 'rating' },
-                            "💰Rate": { width: 15, ref: 'price' },
+                            "Rate": { width: 15, ref: 'price' },
                             "Min.": { width: 15, ref: 'min_limit_base' },
                             "Max.": { width: 16, ref: 'max_limit_base' },
                             "Payment": { width: 16, ref: 'payment_methods' },

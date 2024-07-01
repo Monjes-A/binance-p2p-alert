@@ -1,7 +1,7 @@
 // price setup alert // this is default value, but it should be set through command
 const ALERT = {
-    price: { amount: 40, or_below: true },
-    limit: { amount: 6800, or_above: false }
+    price: { amount: 39.9, or_below: true },
+    limit: { amount: 6700, or_above: false }
 };
 //
 const PAY_TYPES = ["PagoMovil", "Mercantil", "Zinli"]
